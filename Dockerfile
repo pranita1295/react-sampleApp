@@ -3,6 +3,6 @@ WORKDIR /src
 COPY package.json .
 RUN npm i
 COPY . .
-RUN npm run-script build
+RUN npm run build
 EXPOSE 3003
 CMD ["npm", "run", "start"]
