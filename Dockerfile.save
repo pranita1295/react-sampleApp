@@ -1,2 +1,0 @@
-FROM node:12.18-alpine
-RUN export METEOR_ALLOW_SUPERUSER=true
