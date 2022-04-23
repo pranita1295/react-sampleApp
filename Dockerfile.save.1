@@ -1,9 +1,0 @@
-FROM node:12.18-alpine
-RUN export METEOR_ALLOW_SUPERUSER=true
-WORKDIR /src
-COPY package.json .
-RUN npm i
-COPY . .
-
-EXPOSE 3003
-CMD ["npm", "run", "start"]
